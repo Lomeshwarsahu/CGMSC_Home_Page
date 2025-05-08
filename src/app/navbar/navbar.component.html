@@ -1,0 +1,501 @@
+ <!-- Desktop Only Top Navbar #9d49fc-->
+
+
+ <nav id="welcome-section" class="navbar navbar-expand-lg d-none d-md-flex Theme-color"  [style.background]="selectedColor" style="transition: background 0.5s;">
+ <!-- <nav class="navbar navbar-expand-lg d-none d-md-flex" style="background-color:#480878;"> -->
+  <div class="container-fluid">
+    <div class="header-logo-container d-flex justify-content-center justify-content-md-start flex-shrink-0" style="margin-left: 10rem">
+      <img src="assets/images/cg-govt.png" alt="Left Logo" class="header-logo img-fluid" style="max-height: 100px;">
+    </div>
+    <div class="header-title text-center flex-grow-1 mx-md-3 my-2 my-md-0"   >
+      <p class="collector-title text-white fs-6 fw-bold mb-1">
+       <strong  style="font-size:26px; line-height:25px; font-family: 'Times New Roman', Times, serif;">Chhattisgarh Medical Services Corporation Ltd.</strong> </p>
+      <p class="sub-title text-white small m-0" style="text-align: center; font-size: 16px; font-family: 'Times New Roman', Times, serif;">An Government of Chhattisgarh Undertaking</p>
+      <!-- <p class="sub-title text-white small m-0" style="text-align: center; font-size: 16px;">An Initiative to Monitor CGMSCL Services in Chhattisgarh</p> -->
+    </div>
+    <div class="header-logo-container d-flex justify-content-center justify-content-md-end flex-shrink-0" style="margin-right: 10rem">
+      <img src="assets/images/cgmsc-logo.png" alt="Right Logo" class="header-logo img-fluid" style="max-height: 100px;">
+    </div>
+  </div>
+</nav>
+
+<!-- Desktop Only Section with Logos and Images -->
+<marquee 
+  class="d-none d-md-flex"
+  behavior="scroll" 
+  direction="left" 
+  scrollamount="5" 
+  scrolldelay="10" 
+  height="20px" 
+  onmouseover="this.stop();" 
+  onmouseout="this.start();" 
+  style="width: 100%; font-size: medium; line-height: 20px;">
+  <span class="text-dark Fon-family" style="white-space: nowrap;">
+    CGMSC Ltd. Promise for quality healthcare..
+  </span>
+</marquee>
+
+
+
+<!-- Responsive Navbar -->
+
+<nav  id="welcome-section" class="navbar navbar-expand-lg Theme-colorr Theme-colornav " >
+<!-- <nav class="navbar navbar-expand-lg" style="background-color:#480878;">  [style.background]="selectedColor" style="transition: background 0.5s;"-->
+  <div class="container-fluid">
+    <h3 class="navbar-brand text-white d-block d-md-none">CGMSCL</h3>
+
+    <!-- Toggle for Mobile View -->
+    <button class="navbar-toggler ms-auto pr-2 bg-white" type="button" data-bs-toggle="offcanvas"
+      data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" style="z-index: 9999;">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Normal Navbar Links (Desktop) -->
+    <div class="collapse navbar-collapse d-none d-lg-flex justify-content-center" id="navbarNav" style="z-index: 9999;">
+      <ul class="navbar-nav mx-auto">
+        <li class="nav-item hover-dropdown"><a class="nav-link" [routerLink]="['/dashboard']" [routerLinkActive]="['active']">HOME</a></li>
+        <li class="nav-item dropdown hover-dropdown">
+          <a class="nav-link" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            CGMSCL
+          </a>
+          <ul class="dropdown-menu fade-up" aria-labelledby="servicesDropdown">
+            <li><a class="dropdown-item" routerLink="/AboutCGMSC" routerLinkActive="active"><i class="bi bi-play-fill me-2"></i>About Us</a></li>
+            <li><a class="dropdown-item" routerLink="/ContactUs"  routerLinkActive="active"><i class="bi bi-play-fill me-2"></i>Contact Us</a></li>
+            <li><a class="dropdown-item" routerLink="/infrastructure"><i class="bi bi-play-fill me-2"></i>Procurement Policy</a></li>
+            <li><a class="dropdown-item" routerLink="/infrastructure"><i class="bi bi-play-fill me-2"></i>Organogram</a></li>
+            <li><a class="dropdown-item" routerLink="/infrastructure"><i class="bi bi-play-fill me-2"></i>Notice/Circular</a></li>
+            <li><a class="dropdown-item" routerLink="/infrastructure"><i class="bi bi-play-fill me-2"></i>Our Team</a></li>
+            <li><a class="dropdown-item" routerLink="/infrastructure"><i class="bi bi-play-fill me-2"></i>Warehouse</a></li>
+          </ul>
+        </li>
+
+        <!-- Services with Submenu -->
+       <!-- Desktop Menu with Hover Dropdown -->
+      <li class="nav-item dropdown hover-dropdown">
+         <a class="nav-link" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            DRUG
+          </a>
+          <ul class="dropdown-menu fade-up" aria-labelledby="servicesDropdown">
+           <li><a class="dropdown-item" routerLink="/TenderDrug" routerLinkActive="active" ><i class="bi bi-play-fill me-2"></i>Tenders</a></li>
+           <li><a class="dropdown-item" routerLink="/equipment"><i class="bi bi-play-fill me-2"></i>Operational Policy</a></li>
+           <li><a class="dropdown-item" routerLink="/infrastructure"><i class="bi bi-play-fill me-2"></i>Product Blacklisted</a></li>
+            <li><a class="dropdown-item" routerLink="/infrastructure"><i class="bi bi-play-fill me-2"></i>Firms Blacklisted</a></li>
+          </ul>
+      </li>
+        <li class="nav-item dropdown hover-dropdown">
+          <a class="nav-link" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+           EQUIPMENT
+          </a>
+          <ul class="dropdown-menu fade-up" aria-labelledby="servicesDropdown">
+            <li><a class="dropdown-item" routerLink="/TenderEquip" routerLinkActive="active" ><i class="bi bi-play-fill me-2"></i>Tenders</a></li>
+            <li><a class="dropdown-item" routerLink="/infrastructure"><i class="bi bi-play-fill me-2"></i>Operational Policy</a></li>
+            <li><a class="dropdown-item" routerLink="/drug"><i class="bi bi-play-fill me-2"></i>Product Blacklisted</a></li>
+            <li><a class="dropdown-item" routerLink="/infrastructure"><i class="bi bi-play-fill me-2"></i>Firms Blacklisted</a></li>
+            <li><a class="dropdown-item" routerLink="/infrastructure"><i class="bi bi-play-fill me-2"></i>Valid Rate Contracts of Equipment</a></li>
+            
+          </ul>
+        </li>
+        <li class="nav-item dropdown hover-dropdown">
+          <a class="nav-link" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+           INFRASTRUCTURE
+           </a>
+           <ul class="dropdown-menu fade-up" aria-labelledby="servicesDropdown">
+            <li><a class="dropdown-item" routerLink="/TenderCivil" routerLinkActive="active" ><i class="bi bi-play-fill me-2"></i>Tenders</a></li>
+           </ul>
+       </li>
+        <li class="nav-item dropdown hover-dropdown">
+          <a class="nav-link" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          RECRUITMENT
+           </a>
+           <ul class="dropdown-menu fade-up" aria-labelledby="servicesDropdown">
+             <li><a class="dropdown-item" routerLink="/infrastructure"><i class="bi bi-play-fill me-2"></i>Results and Notice</a></li>
+             <li><a class="dropdown-item" routerLink="/infrastructure"><i class="bi bi-play-fill me-2"></i>Recruitment Archive</a></li>
+             <li><a class="dropdown-item" routerLink="/drug"><i class="bi bi-play-fill me-2"></i>Other Department</a></li>
+            
+           </ul>
+       </li>
+        <li class="nav-item dropdown hover-dropdown">
+          <a class="nav-link" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          TENDERS
+           </a>
+           <ul class="dropdown-menu fade-up" aria-labelledby="servicesDropdown">
+             <li><a class="dropdown-item" routerLink="/TenderDrug" routerLinkActive="active"><i class="bi bi-play-fill me-2"></i>Drug</a></li>
+             <li><a class="dropdown-item" routerLink="/TenderCivil" routerLinkActive="active" ><i class="bi bi-play-fill me-2"></i>Health Infrastructure</a></li>
+             <li><a class="dropdown-item" routerLink="/TenderEquip" routerLinkActive="active" ><i class="bi bi-play-fill me-2"></i>Equipment</a></li>
+             <li><a class="dropdown-item" routerLink="/equipment" routerLinkActive="active"><i class="bi bi-play-fill me-2"></i>QC Tenders</a></li>
+             <li><a class="dropdown-item" routerLink="/TenderOther" routerLinkActive="active"><i class="bi bi-play-fill me-2"></i>Other Tenders</a></li>
+           </ul>
+       </li>
+        <li class="nav-item dropdown hover-dropdown">
+          <a class="nav-link" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+           GALLERY
+           </a>
+           <ul class="dropdown-menu fade-up" aria-labelledby="servicesDropdown">
+             <li><a class="dropdown-item" routerLink="/infrastructure"><i class="bi bi-play-fill me-2"></i>News/Clippings</a></li>
+             <li><a class="dropdown-item" routerLink="/infrastructure"><i class="bi bi-play-fill me-2"></i>Health Infrastructure</a></li>
+             <li><a class="dropdown-item" routerLink="/infrastructure"><i class="bi bi-play-fill me-2"></i>Warehouses</a></li>
+             <li><a class="dropdown-item" routerLink="/drug"><i class="bi bi-play-fill me-2"></i>Events</a></li>
+           </ul>
+       </li>
+        <li class="nav-item dropdown hover-dropdown">
+          <a class="nav-link" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+           DOWNLOADS           </a>
+           <ul class="dropdown-menu fade-up" aria-labelledby="servicesDropdown">
+             <li><a class="dropdown-item" routerLink="/infrastructure"><i class="bi bi-play-fill me-2"></i>EDL 2019</a></li>
+             <li><a class="dropdown-item" routerLink="/drug"><i class="bi bi-play-fill me-2"></i>Undertaking of SelfLife</a></li>
+             <li><a class="dropdown-item" routerLink="/infrastructure"><i class="bi bi-play-fill me-2"></i>Agreement Format for Drugs</a></li>
+             <li><a class="dropdown-item" routerLink="/infrastructure"><i class="bi bi-play-fill me-2"></i>Bank Guarantee</a></li>
+            <li><a class="dropdown-item" routerLink="/equipment"><i class="bi bi-play-fill me-2"></i>Extension Format for PO</a></li>
+            <li><a class="dropdown-item" routerLink="/equipment"><i class="bi bi-play-fill me-2"></i>Agreement Equipment</a></li>
+            <li><a class="dropdown-item" routerLink="/equipment"><i class="bi bi-play-fill me-2"></i>Agreement Format for Reagents</a></li>
+           </ul>
+       </li>
+        <li class="nav-item hover-dropdown"><a class="nav-link" routerLink="/rti">RTI</a></li>
+       
+        <li class="nav-item dropdown hover-dropdown">
+          <a class="nav-link" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+           CAREERS
+           </a>
+           <ul class="dropdown-menu fade-up" aria-labelledby="servicesDropdown">
+             <li><a class="dropdown-item" routerLink="/infrastructure"><i class="bi bi-play-fill me-2"></i>Apply Now</a></li>
+            
+           </ul>
+       </li>
+       <li class="nav-item dropdown hover-dropdown">
+        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">LOGIN (MIS APPLICATIONS)</a>
+        <ul class="dropdown-menu">
+          <li class="dropdown-submenu hover-dropdown">
+            <a class="dropdown-item dropdown-toggle">Drug</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="https://dpdmis.in/mdang/"><i class="bi bi-play-fill me-2"></i>Aushadhi Darpan</a></li>
+              <li><a class="dropdown-item"  href="https://dpdmis.in/"><i class="bi bi-play-fill me-2"></i>DPDMIS</a></li>
+               <li><a class="dropdown-item" href="https://dpdmis.in/Wisonline/Index/Index.aspx"><i class="bi bi-play-fill me-2"></i> Warehouse Login</a></li>
+               <li><a class="dropdown-item" href="https://dpdmis.in/faconline/Index/Index.aspx"><i class="bi bi-play-fill me-2"></i>Facility Online</a></li>
+               <li><a class="dropdown-item"  href="https://dpdmis.in/shcangm"><i class="bi bi-play-fill me-2"></i> AAM/SHC Online</a></li>
+               <li><a class="dropdown-item" href="https://dpdmis.in/WardOnline/index/index.aspx"><i class="bi bi-play-fill me-2"></i>Facility DDC Login</a></li>
+              
+            </ul>
+          </li>
+          <li class="dropdown-submenu hover-dropdown">
+            <a class="dropdown-item dropdown-toggle">Equipment</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="http://164.100.131.160/EMSR/Home.aspx"><i class="bi bi-play-fill me-2"></i>EMIS</a></li>
+             
+            </ul>
+          </li>
+          <li class="dropdown-submenu hover-dropdown">
+            <a class="dropdown-item dropdown-toggle">Infrastructure</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="/HIMIS/" ><i class="bi bi-play-fill me-2"></i>Health Infra(HIMIS)</a></li>
+             
+            </ul>
+          </li>
+          <li class="dropdown-submenu hover-dropdown">
+            <a class="dropdown-item dropdown-toggle">Admin</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="http://164.100.131.160/ICM/loginAdmin.aspx" ><i class="bi bi-play-fill me-2"></i>ICMIS</a></li>
+              <li><a class="dropdown-item" href="http://164.100.131.160/VMIS/loginAdmin.aspx"><i class="bi bi-play-fill me-2"></i>VidhanSabha Application</a></li>
+              <li><a class="dropdown-item" href="https://govthealth.cg.gov.in/hrmis/"><i class="bi bi-play-fill me-2"></i>HRMIS</a></li> 
+            </ul>
+          </li>
+        </ul>
+      </li>
+     
+      
+      </ul>
+    </div>
+
+    <!-- Offcanvas Sidebar (Mobile) -->
+    <div class="offcanvas offcanvas-start" id="offcanvasNavbar" tabindex="-1">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title">Menu</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav">
+        
+          
+          <li class="nav-item"><a class="nav-link" [routerLink]="['/dashboard']" [routerLinkActive]="['active']"  data-bs-dismiss="offcanvas" >Home</a></li>
+          
+<li class="nav-item">
+  <a 
+    class="nav-link d-flex justify-content-between align-items-center" 
+    role="button"
+    (click)="isCGMSCLOpen  = !isCGMSCLOpen "
+    [attr.aria-expanded]="isCGMSCLOpen ">
+    CGMSCL
+    <i class="bi" [ngClass]="isCGMSCLOpen  ? 'bi-chevron-up' : 'bi-chevron-down'"></i>
+  </a>
+
+  <div 
+  class="custom-collapse ps-3" 
+  [class.show]="isCGMSCLOpen " 
+  id="servicesCollapseMobile">
+  <ul class="navbar-nav">
+    <li class="nav-item"><a class="nav-link" routerLink="/AboutCGMSC" routerLinkActive="active" data-bs-dismiss="offcanvas">About Us</a></li>
+    <li class="nav-item"><a class="nav-link" routerLink="/ContactUs"  routerLinkActive="active" data-bs-dismiss="offcanvas">Contact Us</a></li>
+    <li class="nav-item"><a class="nav-link" routerLink="/infrastructure" data-bs-dismiss="offcanvas">Procurement Policy</a></li>
+    <li class="nav-item"><a class="nav-link" routerLink="/infrastructure" data-bs-dismiss="offcanvas">Organogram</a></li>
+    <li class="nav-item"><a class="nav-link" routerLink="/infrastructure" data-bs-dismiss="offcanvas">Notice/Circular</a></li>
+    <li class="nav-item"><a class="nav-link" routerLink="/infrastructure" data-bs-dismiss="offcanvas">Our Team</a></li>
+    <li class="nav-item"><a class="nav-link" routerLink="/infrastructure" data-bs-dismiss="offcanvas">Warehouse</a></li>
+
+  
+   
+  </ul>
+</div>
+
+</li>
+
+
+   <li class="nav-item">
+    <a 
+    class="nav-link d-flex justify-content-between align-items-center" 
+    role="button"
+    (click)="isDrugOpen = !isDrugOpen"
+    [attr.aria-expanded]="isDrugOpen">
+    Drug
+    <i class="bi" [ngClass]="isDrugOpen ? 'bi-chevron-up'  : 'bi-chevron-down'"></i>
+  </a>
+
+  <div 
+  class="custom-collapse ps-3" 
+  [class.show]="isDrugOpen" 
+  id="servicesCollapseMobile">
+  <ul class="navbar-nav">
+    <li  class="nav-item"><a class="nav-link" routerLink="/drug" data-bs-dismiss="offcanvas">Tenders</a></li>
+    <li  class="nav-item"><a class="nav-link" routerLink="/equipment" data-bs-dismiss="offcanvas">Operational Policy</a></li>
+    <li  class="nav-item"><a class="nav-link" routerLink="/infrastructure" data-bs-dismiss="offcanvas">Product Blacklisted</a></li>
+     <li  class="nav-item"><a class="nav-link" routerLink="/infrastructure" data-bs-dismiss="offcanvas">Firms Blacklisted</a></li>
+  </ul>
+</div>
+  
+  </li>
+
+    <li class="nav-item">
+    
+      <a 
+      class="nav-link d-flex justify-content-between align-items-center" 
+      role="button" (click)="isEquipmentOpen = !isEquipmentOpen" [attr.aria-expanded]="isEquipmentOpen">
+      Equipment
+      <i class="bi" [ngClass]="isEquipmentOpen ? 'bi-chevron-up' : 'bi-chevron-down'"></i>
+    </a>
+  
+    <div 
+    class="custom-collapse ps-3" 
+    [class.show]="isEquipmentOpen" 
+    id="EquipmentOpenCollapseMobile">
+    <ul class="navbar-nav">
+      <li  class="nav-item"><a class="nav-link" routerLink="/infrastructure"data-bs-dismiss="offcanvas">Product Blacklisted</a></li>
+      <li  class="nav-item"><a class="nav-link" routerLink="/drug"data-bs-dismiss="offcanvas">Tenders</a></li>
+      <li  class="nav-item"><a class="nav-link" routerLink="/equipment"data-bs-dismiss="offcanvas">Operational Policy</a></li>
+       <li  class="nav-item"><a class="nav-link" routerLink="/infrastructure"data-bs-dismiss="offcanvas">Firms Blacklisted</a></li>
+       <li  class="nav-item"><a class="nav-link" routerLink="/infrastructure"data-bs-dismiss="offcanvas">Valid Rate Contracts of Equipment</a></li>
+    </ul>
+  </div>
+    
+    
+    </li>
+    <li class="nav-item">
+      <a 
+      class="nav-link d-flex justify-content-between align-items-center" 
+      role="button" (click)="isInfrastructureOpen = !isInfrastructureOpen"  [attr.aria-expanded]="isInfrastructureOpen">
+      Infrastructure
+      <i class="bi" [ngClass]="isInfrastructureOpen ? 'bi-chevron-up' : 'bi-chevron-down'"></i>
+    </a>
+  
+    <div 
+    class="custom-collapse ps-3" 
+    [class.show]="isInfrastructureOpen" 
+    id="InfrastructureCollapseMobile">
+    <ul class="navbar-nav">
+      <li  class="nav-item"><a class="nav-link" routerLink="/drug"data-bs-dismiss="offcanvas">Tenders</a></li>
+    </ul>
+  </div>
+    
+    </li>
+
+          <li class="nav-item">
+            <a 
+            class="nav-link d-flex justify-content-between align-items-center" 
+            role="button"
+            (click)="isRecruitmentOpen = !isRecruitmentOpen"
+            [attr.aria-expanded]="isRecruitmentOpen">
+            Recruitment
+            <i class="bi" [ngClass]="isRecruitmentOpen ? 'bi-chevron-up' : 'bi-chevron-down'"></i>
+          </a>
+        
+          <div 
+          class="custom-collapse ps-3" 
+          [class.show]="isRecruitmentOpen" 
+          id="RecruitmentCollapseMobile">
+          <ul class="navbar-nav">
+            <li  class="nav-item"><a class="nav-link" routerLink="/drug"data-bs-dismiss="offcanvas">Results and Notice</a></li>
+            <li  class="nav-item"><a class="nav-link" routerLink="/equipment"data-bs-dismiss="offcanvas">Other Department</a></li>
+            <li  class="nav-item"><a class="nav-link" routerLink="/infrastructure"data-bs-dismiss="offcanvas">Recruitment Archive</a></li>
+          </ul>
+        </div>
+          
+          </li>
+          <li class="nav-item">
+            <a 
+            class="nav-link d-flex justify-content-between align-items-center" 
+            role="button" (click)="isTendersOpen = !isTendersOpen" [attr.aria-expanded]="isTendersOpen">
+            Tenders
+            <i class="bi" [ngClass]="isTendersOpen ? 'bi-chevron-up' : 'bi-chevron-down'"></i>
+          </a>
+        
+          <div 
+          class="custom-collapse ps-3" 
+          [class.show]="isTendersOpen" 
+          id="TendersCollapseMobile">
+          <ul class="navbar-nav">
+            <li  class="nav-item"><a class="nav-link" routerLink="/TenderDrug" routerLinkActive="active" data-bs-dismiss="offcanvas">Drug</a></li>
+            <li  class="nav-item"><a class="nav-link" routerLink="/TenderCivil" routerLinkActive="active" data-bs-dismiss="offcanvas">Health Infrastructure</a></li>
+            <li  class="nav-item"><a class="nav-link" routerLink="/TenderEquip" routerLinkActive="active"  data-bs-dismiss="offcanvas">Equipment</a></li>
+            <li  class="nav-item"><a class="nav-link" routerLink="/infrastructure"data-bs-dismiss="offcanvas">QC Tenders</a></li>
+            <li  class="nav-item"><a class="nav-link"  routerLink="/TenderOther" routerLinkActive="active" data-bs-dismiss="offcanvas">Other Tenders</a></li>
+
+           
+          </ul>
+        </div>
+          
+          
+          </li>
+          <li class="nav-item">
+            <a 
+            class="nav-link d-flex justify-content-between align-items-center" 
+            role="button" (click)="isGalleryOpen = !isGalleryOpen" [attr.aria-expanded]="isGalleryOpen">
+            Gallery
+            <i class="bi" [ngClass]="isGalleryOpen ? 'bi-chevron-up' : 'bi-chevron-down'"></i>
+          </a>
+        
+          <div 
+          class="custom-collapse ps-3" 
+          [class.show]="isGalleryOpen" 
+          id="GalleryCollapseMobile">
+          <ul class="navbar-nav">
+            <li  class="nav-item"><a class="nav-link" routerLink="/drug"data-bs-dismiss="offcanvas">News/Clippings</a></li>
+            <li  class="nav-item"><a class="nav-link" routerLink="/equipment"data-bs-dismiss="offcanvas">Events</a></li>
+            <li  class="nav-item"><a class="nav-link" routerLink="/infrastructure"data-bs-dismiss="offcanvas">Health Infrastructure</a></li>
+             <li  class="nav-item"><a class="nav-link" routerLink="/infrastructure"data-bs-dismiss="offcanvas">Warehouses</a></li>
+          </ul>
+        </div>
+          </li>
+          <li class="nav-item">
+            <a 
+            class="nav-link d-flex justify-content-between align-items-center" 
+            role="button" (click)="isDownloadsOpen = !isDownloadsOpen" [attr.aria-expanded]="isDownloadsOpen">
+            Downloads
+            <i class="bi" [ngClass]="isDownloadsOpen ? 'bi-chevron-up' : 'bi-chevron-down'"></i>
+          </a>
+        
+          <div 
+          class="custom-collapse ps-3" 
+          [class.show]="isDownloadsOpen" 
+          id="DownloadsCollapseMobile">
+          <ul class="navbar-nav">
+            <li  class="nav-item"><a class="nav-link" routerLink="/drug"data-bs-dismiss="offcanvas">EDL 2019</a></li>
+            <li  class="nav-item"><a class="nav-link" routerLink="/equipment"data-bs-dismiss="offcanvas">Undertaking of SelfLife</a></li>
+            <li  class="nav-item"><a class="nav-link" routerLink="/infrastructure"data-bs-dismiss="offcanvas">Agreement Format for Drugs</a></li>
+             <li  class="nav-item"><a class="nav-link" routerLink="/infrastructure"data-bs-dismiss="offcanvas">Bank Guarantee</a></li>
+             <li  class="nav-item"><a class="nav-link" routerLink="/infrastructure"data-bs-dismiss="offcanvas">Extension Format for PO</a></li>
+             <li  class="nav-item"><a class="nav-link" routerLink="/infrastructure"data-bs-dismiss="offcanvas">Agreement Equipment</a></li>
+             <li  class="nav-item"><a class="nav-link" routerLink="/infrastructure"data-bs-dismiss="offcanvas">Agreement Format for Reagents</a></li>
+          </ul>
+        </div>
+          
+          </li>
+          <li class="nav-item"><a class="nav-link" routerLink="/rti" data-bs-dismiss="offcanvas">RTI</a></li>
+          <li class="nav-item">
+            <a 
+            class="nav-link d-flex justify-content-between align-items-center" 
+            role="button"
+            (click)="isCareersOpen = !isCareersOpen"
+            [attr.aria-expanded]="isCareersOpen">
+            Careers
+            <i class="bi" [ngClass]="isCareersOpen ? 'bi-chevron-up' : 'bi-chevron-down'"></i>
+          </a>
+        
+          <div 
+          class="custom-collapse ps-3" 
+          [class.show]="isCareersOpen" 
+          id="CareersCollapseMobile">
+          <ul class="navbar-nav">
+            <li  class="nav-item"><a class="nav-link" routerLink="/drug"data-bs-dismiss="offcanvas">Apply Now</a></li>
+          </ul>
+        </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Logout Button -->
+    <!-- <div style="padding-left: 3px;">
+      <button *ngIf="authService.isLoggedIn()" (click)="logout()"
+        class="btn btn-sm me-1 btn_pa rounded-circle d-flex align-items-center justify-content-center"
+        [ngClass]="{'btn-outline-light': isDarkMode, 'btn-outline-dark': !isDarkMode}"
+        style="width: 40px; height: 40px; padding: 0;">
+        <i class="bi bi-box-arrow-right"></i>
+      </button>
+    </div> -->
+  </div>
+</nav>
+
+<div class="container my-0" style="position: relative; overflow-x: hidden;" >
+
+  <!-- Icon Button -->
+  <!-- <button 
+    class="btn btn-outline-primary d-flex align-items-center" 
+    type="button"
+    (click)="toggleCollapse()"
+    style="position: fixed; top: 20px; right: 20px; z-index: 1050;">
+    🎨
+  </button> -->
+<!-- Icon Button without Background or Border top: 20px; -->
+<button 
+  class="btn btn-outline-primary d-flex align-items-center" 
+  type="button"
+  (click)="toggleCollapse(selectedColor)"
+  style="position: fixed;  right: -14px; z-index: 1050; 
+         background-color: transparent; border: none; color: #ff9800;">
+  <span class="material-icons" style="font-size: 30px;">🎨</span>
+</button>
+
+  <!-- Sliding Side Panel -->
+  <div 
+    id="colorPickerCollapse"
+    [style.right]="isCollapsed ? '0' : '-300px'"
+   
+    style="position: fixed; top: 0; height: 70%; width: 300px; 
+    background:  #fff8f2; box-shadow: -2px 0 5px rgba(0,0,0,0.3); transition: right 0.5s ease;
+     z-index: 1040; border-top-left-radius: 10px; border-bottom-left-radius: 10px;">
+ <!-- style="position: fixed; top: 0; height: 70%; width: 300px; 
+ background:  #fff8f2;
+  box-shadow: -2px 0 5px rgba(0,0,0,0.3);
+  transition: right 0.5s ease;
+  z-index: 1040; border-top-left-radius: 10px; border-bottom-left-radius: 10px;"> -->
+    <div class="card-body p-4"  >
+      <h5 class="mb-4">Pick Your Color</h5>
+      <input type="color" 
+             class="form-control form-control-color mb-3" 
+             id="colorPicker" 
+             [(ngModel)]="selectedColor" 
+             title="Choose your color">
+      <p>Selected Color: <span [style.color]="selectedColor">{{ selectedColor }}</span></p>
+    </div>
+
+  </div>
+
+</div>
+<!-- Footer -->
+<div class="pt-0">
+  <footer class="bg-secondary text-white text-center fixed-bottom">
+    <div class="container p-2 Fon-family">
+      <p class="mb-0">&copy; 2024 CGMSCL. All Rights Reserved.</p>
+      <!-- <p class="mb-0">Contents owned & updated by Chhattisgarh Medical Services Corporation Ltd, Govt. of Chhattisgarh Undertaking.
+        © 2012-2013 Chhattisgarh Medical Services Corporation Ltd. All Rights Reserved.
+        Site is best viewed in Google Crome,Mozilla,IE 7 & Above</p> -->
+    </div>
+  </footer>
+</div>
