@@ -10,8 +10,8 @@ import { TenderEquipmentComponent } from './components/tender-equipment/tender-e
 import { TenderOtherTenderComponent } from './components/tender-other-tender/tender-other-tender.component';
 import { TenderCivilComponent } from './components/tender-civil/tender-civil.component';
 import { ContactUsComponent } from './components/contact-us/contact-us.component';
-
-
+import { ProcurementPolicyComponent } from './components/procurement-policy/procurement-policy.component';
+import { OrganogramComponent } from './components/organogram/organogram.component';
 const routes: Routes = [
   {path: '', redirectTo: 'login', pathMatch: 'full'},
   {path:'login',component:LoginComponent},
@@ -25,6 +25,8 @@ const routes: Routes = [
   { path: 'TenderOther', component: TenderOtherTenderComponent },
   { path: 'TenderCivil', component: TenderCivilComponent },
   { path: 'ContactUs', component: ContactUsComponent },
+  { path: 'ProcurementPolicy', component: ProcurementPolicyComponent },
+  { path: 'Organogram', component: OrganogramComponent },
   { path: 'login', component: LoginComponent },
   { path: 'dashboard', component: HomeComponent, canActivate: [authGuard] }, // ✅ Protected Route
 

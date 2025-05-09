@@ -1,7 +1,80 @@
  <!-- Desktop Only Top Navbar #9d49fc-->
+<!-- <div class="" style="background-color: #ffffff;"> -->
+ 
+<!-- [style.background]="selectedColor" -->
+  <!-- <div class="row">
+    <div class="col-6"> -->
 
+      <div class="color-selector">
+        <input type="button" class="color-input border rounded-circle"   [style.background]="gradients[0]" (click)="setTheme(gradients[0])">
+        <input type="button" class="color-input border rounded-circle" [style.background]="gradients[1]" (click)="setTheme(gradients[1])">
+        <input type="button" class="color-input border rounded-circle" [style.background]="gradients[2]" (click)="setTheme(gradients[2])">
+      </div>
+      
+      <!-- <marquee 
+      class="d-none d-md-flex"
+      behavior="scroll" 
+      direction="left" 
+      scrollamount="5" 
+      scrolldelay="10" 
+      height="20px" 
+      onmouseover="this.stop();" 
+      onmouseout="this.start();" 
+      style="width: 100%; font-size: medium; line-height: 20px;">
+      <span class="text-dark Fon-family" style="white-space: nowrap;">
+        CGMSC Ltd. Promise for quality healthcare..
+      </span>
+    </marquee> -->
 
- <nav id="welcome-section" class="navbar navbar-expand-lg d-none d-md-flex Theme-color"  [style.background]="selectedColor" style="transition: background 0.5s;">
+      <!-- <div class="container my-0" style="position: relative; overflow-x: hidden;" > -->
+
+        <!-- Icon Button -->
+        <!-- <button 
+          class="btn btn-outline-primary d-flex align-items-center" 
+          type="button"
+          (click)="toggleCollapse()"
+          style="position: fixed; top: 20px; right: 20px; z-index: 1050;">
+          🎨
+        </button> -->
+      <!-- Icon Button without Background or Border top: 20px; -->
+      <!-- <button 
+        class="btn btn-outline-primary d-flex align-items-center" 
+        type="button"
+        (click)="toggleCollapse(selectedColor)"
+        style="position: fixed;  right: -14px; z-index: 1050; 
+               background-color: transparent; border: none; color: #ff9800;">
+        <span class="material-icons" style="font-size: 30px;">🎨</span>
+      </button> -->
+      
+        <!-- Sliding Side Panel -->
+        <!-- <div 
+          id="colorPickerCollapse"
+          [style.right]="isCollapsed ? '0' : '-300px'"
+         
+          style="position: fixed; top: 0; height: 70%; width: 300px; 
+          background:  #fff8f2; box-shadow: -2px 0 5px rgba(0,0,0,0.3); transition: right 0.5s ease;
+           z-index: 1040; border-top-left-radius: 10px; border-bottom-left-radius: 10px;"> -->
+       <!-- style="position: fixed; top: 0; height: 70%; width: 300px; 
+       background:  #fff8f2;
+        box-shadow: -2px 0 5px rgba(0,0,0,0.3);
+        transition: right 0.5s ease;
+        z-index: 1040; border-top-left-radius: 10px; border-bottom-left-radius: 10px;"> -->
+          <!-- <div class="card-body p-4"  >
+            <h5 class="mb-4">Pick Your Color</h5>
+            <input type="color" 
+                   class="form-control form-control-color mb-3 border border-cercle rounded-circle "
+                   id="colorPicker" 
+                   [(ngModel)]="selectedColor" 
+                   title="Choose your color">
+            <p>Selected Color: <span [style.color]="selectedColor">{{ selectedColor }}</span></p> 
+          </div> -->
+      
+        <!-- </div> -->
+      
+      <!-- </div> -->
+     <!-- </div>
+</div> -->
+ <nav id="welcome-section" class="navbar navbar-expand-lg d-none d-md-flex Theme-color theme-navbar"   style="transition: background 0.5s;">
  <!-- <nav class="navbar navbar-expand-lg d-none d-md-flex" style="background-color:#480878;"> -->
   <div class="container-fluid">
     <div class="header-logo-container d-flex justify-content-center justify-content-md-start flex-shrink-0" style="margin-left: 10rem">
@@ -20,7 +93,7 @@
 </nav>
 
 <!-- Desktop Only Section with Logos and Images -->
-<marquee 
+<!-- <marquee 
   class="d-none d-md-flex"
   behavior="scroll" 
   direction="left" 
@@ -33,13 +106,15 @@
   <span class="text-dark Fon-family" style="white-space: nowrap;">
     CGMSC Ltd. Promise for quality healthcare..
   </span>
-</marquee>
+</marquee> -->
 
+<div class="border">
 
+</div>
 
 <!-- Responsive Navbar -->
 
-<nav  id="welcome-section" class="navbar navbar-expand-lg Theme-colorr Theme-colornav " >
+<nav  id="welcome-section" class="navbar navbar-expand-lg Theme-colorr Theme-colornav theme-navbar " >
 <!-- <nav class="navbar navbar-expand-lg" style="background-color:#480878;">  [style.background]="selectedColor" style="transition: background 0.5s;"-->
   <div class="container-fluid">
     <h3 class="navbar-brand text-white d-block d-md-none">CGMSCL</h3>
@@ -58,7 +133,7 @@
           <a class="nav-link" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             CGMSCL
           </a>
-          <ul class="dropdown-menu fade-up" aria-labelledby="servicesDropdown">
+          <ul class="dropdown-menu theme-navbar fade-up" aria-labelledby="servicesDropdown">
             <li><a class="dropdown-item" routerLink="/AboutCGMSC" routerLinkActive="active"><i class="bi bi-play-fill me-2"></i>About Us</a></li>
             <li><a class="dropdown-item" routerLink="/ContactUs"  routerLinkActive="active"><i class="bi bi-play-fill me-2"></i>Contact Us</a></li>
             <li><a class="dropdown-item" routerLink="/infrastructure"><i class="bi bi-play-fill me-2"></i>Procurement Policy</a></li>
@@ -75,7 +150,7 @@
          <a class="nav-link" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             DRUG
           </a>
-          <ul class="dropdown-menu fade-up" aria-labelledby="servicesDropdown">
+          <ul class="dropdown-menu theme-navbar fade-up" aria-labelledby="servicesDropdown">
            <li><a class="dropdown-item" routerLink="/TenderDrug" routerLinkActive="active" ><i class="bi bi-play-fill me-2"></i>Tenders</a></li>
            <li><a class="dropdown-item" routerLink="/equipment"><i class="bi bi-play-fill me-2"></i>Operational Policy</a></li>
            <li><a class="dropdown-item" routerLink="/infrastructure"><i class="bi bi-play-fill me-2"></i>Product Blacklisted</a></li>
@@ -86,7 +161,7 @@
           <a class="nav-link" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
            EQUIPMENT
           </a>
-          <ul class="dropdown-menu fade-up" aria-labelledby="servicesDropdown">
+          <ul class="dropdown-menu theme-navbar fade-up" aria-labelledby="servicesDropdown">
             <li><a class="dropdown-item" routerLink="/TenderEquip" routerLinkActive="active" ><i class="bi bi-play-fill me-2"></i>Tenders</a></li>
             <li><a class="dropdown-item" routerLink="/infrastructure"><i class="bi bi-play-fill me-2"></i>Operational Policy</a></li>
             <li><a class="dropdown-item" routerLink="/drug"><i class="bi bi-play-fill me-2"></i>Product Blacklisted</a></li>
@@ -99,7 +174,7 @@
           <a class="nav-link" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
            INFRASTRUCTURE
            </a>
-           <ul class="dropdown-menu fade-up" aria-labelledby="servicesDropdown">
+           <ul class="dropdown-menu theme-navbar fade-up" aria-labelledby="servicesDropdown">
             <li><a class="dropdown-item" routerLink="/TenderCivil" routerLinkActive="active" ><i class="bi bi-play-fill me-2"></i>Tenders</a></li>
            </ul>
        </li>
@@ -107,7 +182,7 @@
           <a class="nav-link" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
           RECRUITMENT
            </a>
-           <ul class="dropdown-menu fade-up" aria-labelledby="servicesDropdown">
+           <ul class="dropdown-menu theme-navbar fade-up" aria-labelledby="servicesDropdown">
              <li><a class="dropdown-item" routerLink="/infrastructure"><i class="bi bi-play-fill me-2"></i>Results and Notice</a></li>
              <li><a class="dropdown-item" routerLink="/infrastructure"><i class="bi bi-play-fill me-2"></i>Recruitment Archive</a></li>
              <li><a class="dropdown-item" routerLink="/drug"><i class="bi bi-play-fill me-2"></i>Other Department</a></li>
@@ -118,7 +193,7 @@
           <a class="nav-link" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
           TENDERS
            </a>
-           <ul class="dropdown-menu fade-up" aria-labelledby="servicesDropdown">
+           <ul class="dropdown-menu theme-navbar fade-up" aria-labelledby="servicesDropdown">
              <li><a class="dropdown-item" routerLink="/TenderDrug" routerLinkActive="active"><i class="bi bi-play-fill me-2"></i>Drug</a></li>
              <li><a class="dropdown-item" routerLink="/TenderCivil" routerLinkActive="active" ><i class="bi bi-play-fill me-2"></i>Health Infrastructure</a></li>
              <li><a class="dropdown-item" routerLink="/TenderEquip" routerLinkActive="active" ><i class="bi bi-play-fill me-2"></i>Equipment</a></li>
@@ -130,7 +205,7 @@
           <a class="nav-link" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
            GALLERY
            </a>
-           <ul class="dropdown-menu fade-up" aria-labelledby="servicesDropdown">
+           <ul class="dropdown-menu theme-navbar fade-up" aria-labelledby="servicesDropdown">
              <li><a class="dropdown-item" routerLink="/infrastructure"><i class="bi bi-play-fill me-2"></i>News/Clippings</a></li>
              <li><a class="dropdown-item" routerLink="/infrastructure"><i class="bi bi-play-fill me-2"></i>Health Infrastructure</a></li>
              <li><a class="dropdown-item" routerLink="/infrastructure"><i class="bi bi-play-fill me-2"></i>Warehouses</a></li>
@@ -140,7 +215,7 @@
         <li class="nav-item dropdown hover-dropdown">
           <a class="nav-link" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
            DOWNLOADS           </a>
-           <ul class="dropdown-menu fade-up" aria-labelledby="servicesDropdown">
+           <ul class="dropdown-menu theme-navbar fade-up" aria-labelledby="servicesDropdown">
              <li><a class="dropdown-item" routerLink="/infrastructure"><i class="bi bi-play-fill me-2"></i>EDL 2019</a></li>
              <li><a class="dropdown-item" routerLink="/drug"><i class="bi bi-play-fill me-2"></i>Undertaking of SelfLife</a></li>
              <li><a class="dropdown-item" routerLink="/infrastructure"><i class="bi bi-play-fill me-2"></i>Agreement Format for Drugs</a></li>
@@ -156,17 +231,17 @@
           <a class="nav-link" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
            CAREERS
            </a>
-           <ul class="dropdown-menu fade-up" aria-labelledby="servicesDropdown">
+           <ul class="dropdown-menu theme-navbar fade-up" aria-labelledby="servicesDropdown">
              <li><a class="dropdown-item" routerLink="/infrastructure"><i class="bi bi-play-fill me-2"></i>Apply Now</a></li>
             
            </ul>
        </li>
        <li class="nav-item dropdown hover-dropdown">
         <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">LOGIN (MIS APPLICATIONS)</a>
-        <ul class="dropdown-menu">
+        <ul class="dropdown-menu theme-navbar">
           <li class="dropdown-submenu hover-dropdown">
             <a class="dropdown-item dropdown-toggle">Drug</a>
-            <ul class="dropdown-menu">
+            <ul class="dropdown-menu theme-navbar">
               <li><a class="dropdown-item" href="https://dpdmis.in/mdang/"><i class="bi bi-play-fill me-2"></i>Aushadhi Darpan</a></li>
               <li><a class="dropdown-item"  href="https://dpdmis.in/"><i class="bi bi-play-fill me-2"></i>DPDMIS</a></li>
                <li><a class="dropdown-item" href="https://dpdmis.in/Wisonline/Index/Index.aspx"><i class="bi bi-play-fill me-2"></i> Warehouse Login</a></li>
@@ -178,21 +253,21 @@
           </li>
           <li class="dropdown-submenu hover-dropdown">
             <a class="dropdown-item dropdown-toggle">Equipment</a>
-            <ul class="dropdown-menu">
+            <ul class="dropdown-menu theme-navbar">
               <li><a class="dropdown-item" href="http://164.100.131.160/EMSR/Home.aspx"><i class="bi bi-play-fill me-2"></i>EMIS</a></li>
              
             </ul>
           </li>
           <li class="dropdown-submenu hover-dropdown">
             <a class="dropdown-item dropdown-toggle">Infrastructure</a>
-            <ul class="dropdown-menu">
+            <ul class="dropdown-menu theme-navbar">
               <li><a class="dropdown-item" href="/HIMIS/" ><i class="bi bi-play-fill me-2"></i>Health Infra(HIMIS)</a></li>
              
             </ul>
           </li>
           <li class="dropdown-submenu hover-dropdown">
             <a class="dropdown-item dropdown-toggle">Admin</a>
-            <ul class="dropdown-menu">
+            <ul class="dropdown-menu theme-navbar">
               <li><a class="dropdown-item" href="http://164.100.131.160/ICM/loginAdmin.aspx" ><i class="bi bi-play-fill me-2"></i>ICMIS</a></li>
               <li><a class="dropdown-item" href="http://164.100.131.160/VMIS/loginAdmin.aspx"><i class="bi bi-play-fill me-2"></i>VidhanSabha Application</a></li>
               <li><a class="dropdown-item" href="https://govthealth.cg.gov.in/hrmis/"><i class="bi bi-play-fill me-2"></i>HRMIS</a></li> 
@@ -442,52 +517,7 @@
   </div>
 </nav>
 
-<div class="container my-0" style="position: relative; overflow-x: hidden;" >
 
-  <!-- Icon Button -->
-  <!-- <button 
-    class="btn btn-outline-primary d-flex align-items-center" 
-    type="button"
-    (click)="toggleCollapse()"
-    style="position: fixed; top: 20px; right: 20px; z-index: 1050;">
-    🎨
-  </button> -->
-<!-- Icon Button without Background or Border top: 20px; -->
-<button 
-  class="btn btn-outline-primary d-flex align-items-center" 
-  type="button"
-  (click)="toggleCollapse(selectedColor)"
-  style="position: fixed;  right: -14px; z-index: 1050; 
-         background-color: transparent; border: none; color: #ff9800;">
-  <span class="material-icons" style="font-size: 30px;">🎨</span>
-</button>
-
-  <!-- Sliding Side Panel -->
-  <div 
-    id="colorPickerCollapse"
-    [style.right]="isCollapsed ? '0' : '-300px'"
-   
-    style="position: fixed; top: 0; height: 70%; width: 300px; 
-    background:  #fff8f2; box-shadow: -2px 0 5px rgba(0,0,0,0.3); transition: right 0.5s ease;
-     z-index: 1040; border-top-left-radius: 10px; border-bottom-left-radius: 10px;">
- <!-- style="position: fixed; top: 0; height: 70%; width: 300px; 
- background:  #fff8f2;
-  box-shadow: -2px 0 5px rgba(0,0,0,0.3);
-  transition: right 0.5s ease;
-  z-index: 1040; border-top-left-radius: 10px; border-bottom-left-radius: 10px;"> -->
-    <div class="card-body p-4"  >
-      <h5 class="mb-4">Pick Your Color</h5>
-      <input type="color" 
-             class="form-control form-control-color mb-3" 
-             id="colorPicker" 
-             [(ngModel)]="selectedColor" 
-             title="Choose your color">
-      <p>Selected Color: <span [style.color]="selectedColor">{{ selectedColor }}</span></p>
-    </div>
-
-  </div>
-
-</div>
 <!-- Footer -->
 <div class="pt-0">
   <footer class="bg-secondary text-white text-center fixed-bottom">

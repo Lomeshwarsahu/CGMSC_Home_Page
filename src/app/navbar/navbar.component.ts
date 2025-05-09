@@ -96,4 +96,14 @@ if (color !== '#FF6F00') {
     }
     this.isCollapsed = !this.isCollapsed;
   }
+
+  gradients: string[] = [
+    'linear-gradient(1deg, rgb(18, 166, 210) 15%, rgb(49, 65, 252) 100%)',
+    'linear-gradient(180deg, #FF6000 11%, #FFA559 100%)',
+    'linear-gradient(rgb(93, 18, 210) 11%, rgb(184, 49, 252) 100%)'
+  ];
+
+  setTheme(gradient: string) {
+    document.documentElement.style.setProperty('--theme-gradient', gradient);
+  }
 }
